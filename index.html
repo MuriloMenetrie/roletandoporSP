@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roleta de Rolês SP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="roleta-container">
+        <h1>Bora roletar por SP?!</h1>
+
+        <div class="filtro-container">
+            <label for="categoryFilter">Hoje eu tô afim de...</label>
+            <select id="categoryFilter">
+                <option value="todos">Todos os Rolês</option>
+                <option value="bares">Bares e Noite</option>
+                <option value="restaurantes">Restaurantes e Lanches</option>
+                <option value="cafeterias">Cafeterias e Doces</option>
+                <option value="cultura">Museus e Cultura</option>
+                <option value="passeios">Passeios e Outros</option>
+            </select>
+        </div>
+        
+        <button id="spinButton">Roletar!</button>
+        
+        <div id="result">
+            <p id="loading-text">Clique e descubra...</p>
+
+            <div id="result-card">
+                <img id="result-image" src="" alt="Foto do local">
+                <h2 id="result-name"></h2>
+                <p id="result-address"></p>
+
+                <div class="links-container">
+                    <a id="result-maps-link" class="btn-link maps" href="#" target="_blank">Ver no Google Maps</a>
+                    <a id="result-link" class="btn-link site" href="#" target="_blank">Ver mais</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
